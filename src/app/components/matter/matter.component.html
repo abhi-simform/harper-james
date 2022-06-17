@@ -1,0 +1,91 @@
+<div class="module matter">
+  <div class="module__header matter__header">
+    <h2 class="header__title">Matter</h2>
+    <form action="#" class="module__search">
+      <img src="../../../assets/global-icons/search.svg" alt="search icon" />
+      <div class="divider"></div>
+      <input type="text" name="" id="" placeholder="Search" />
+    </form>
+  </div>
+  <div class="table-container">
+    <div class="filters">
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/Service.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/budget.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/Status.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="table">
+      <table class="client-table">
+        <tr class="head-row">
+          <th>Matter ID</th>
+          <th>Client Name</th>
+          <th>Matter</th>
+          <th>Responsible Solicitor</th>
+          <th>Instructed By</th>
+          <th>Status</th>
+          <th>Last Update</th>
+        </tr>
+        <tr *ngFor="let matter of matters">
+          <td>{{ matter.matterid }}</td>
+
+          <td>{{ matter.name }}</td>
+          <td>{{ matter.matter }}</td>
+          <td>{{ matter.solicitor }}</td>
+          <td>{{ matter.instructor }}</td>
+          <td>
+            <span class="status" ngClass="{{ matter.status }}">{{
+              matter.status
+            }}</span>
+          </td>
+          <td class="last-update">
+            {{ matter.lastupdate }}
+            <img src="../../../assets/global-icons/matter_add.svg" alt="" />
+            <img src="../../../assets/global-icons/matter_time.svg" alt="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

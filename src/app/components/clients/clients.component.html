@@ -1,0 +1,94 @@
+<div class="module clients">
+  <div class="module__header clients__header">
+    <h2 class="header__title">Clients</h2>
+    <form action="#" class="module__search">
+      <img src="../../../assets/global-icons/search.svg" alt="search icon" />
+      <div class="divider"></div>
+      <input type="text" name="" id="" placeholder="Search" />
+    </form>
+  </div>
+  <div class="table-container">
+    <div class="filters">
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/Service.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/budget.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+      <div class="filter">
+        <img
+          src="../../../assets/global-icons/Status.svg"
+          alt="service icon"
+          class="filter__img"
+        />
+        <div class="divider"></div>
+        <select name="services" id="" class="filter__select">
+          <option value="">Service Plan</option>
+          <option value="">Service 1</option>
+          <option value="">Service 2</option>
+          <option value="">Service 3</option>
+        </select>
+        <img src="../../../assets/sidebar-icons/down-arrow.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="table">
+      <table class="client-table">
+        <tr class="head-row">
+          <th>Client ID</th>
+          <th>Status</th>
+          <th>Client Name</th>
+          <th>Parent Client</th>
+          <th>Service Plan</th>
+          <th>Plan Start Date</th>
+          <th>Plan End Date</th>
+          <th>Address</th>
+          <th>Solicitor Rate</th>
+          <th>Legal Assistant Rate</th>
+          <th>Total Invoiced</th>
+        </tr>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.clientid }}</td>
+          <td>
+            <span class="status" ngClass="{{ client.status }}">{{
+              client.status
+            }}</span>
+          </td>
+          <td>{{ client.name }}</td>
+          <td>{{ client.parent }}</td>
+          <td>{{ client.plan }}</td>
+          <td>{{ client.startdate }}</td>
+          <td>{{ client.enddate }}</td>
+          <td>{{ client.address }}</td>
+          <td>{{ client.solicitorrate }}</td>
+          <td>{{ client.legalrate }}</td>
+          <td>{{ client.invoice }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 30px);
+  width: 290px;
+  padding: 45px 0px 30px 0px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: var(--clr-white);
+  position: relative;
+}
+
+.sidebar__logo {
+  padding-inline: 30px 40px;
+  margin-bottom: 50px;
+}
+
+.sidebar__nav {
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__item--active {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  position: relative;
+  .nav__link {
+    color: var(--clr-white);
+
+    .nav__link__icon {
+      filter: invert(100%);
+    }
+  }
+  .nav__link__arrow {
+    color: var(--clr-white);
+    filter: invert(100%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--clr-green);
+  }
+  .subnav__list {
+    max-height: 1000px;
+  }
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 17px 30px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--clr-lighter-grey);
+  color: var(--clr-text-3);
+  .nav__link__icon {
+    color: var(--clr-text-3);
+  }
+}
+
+.nav__link__arrow {
+  position: absolute;
+  right: 30px;
+}
+
+.subnav__list {
+  background-color: var(--clr-blue-bg);
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.subnav__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 17px 30px;
+  color: var(--clr-text-1);
+  padding-left: 66px;
+  font-weight: 500;
+}
+
+.navactive {
+  max-height: 1000px;
+}
+
+.sidebar__profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  margin-inline: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  width: calc(100% - 60px);
+  background-color: var(--clr-blue-bg);
+}
+
+.profile__avatar {
+  img {
+    vertical-align: middle;
+  }
+}
+
+.profile__detail {
+  display: grid;
+  span {
+    &:first-child {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+    &:last-child {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--clr-text-3);
+      letter-spacing: -0.02em;
+    }
+  }
+}

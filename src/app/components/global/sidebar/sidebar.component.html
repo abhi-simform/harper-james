@@ -1,0 +1,203 @@
+<div class="sidebar">
+  <div class="sidebar__logo">
+    <img src="../../../../assets/images/logo.png" alt="logo" />
+  </div>
+
+  <nav class="sidebar__nav">
+    <ul class="nav__list">
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="clients" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/client.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Client</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="matter" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/matter.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Matter</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="timesheets" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/timesheet.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Timesheets</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = !isActive"
+      >
+        <a class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/Invoice.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Invoices</span>
+          <img
+            src="../../../../assets/sidebar-icons/down-arrow.svg"
+            alt=""
+            class="nav__link__arrow"
+          />
+        </a>
+        <ul class="subnav__list" [ngClass]="{ navactive: isActive }">
+          <li class="subnav__item">
+            <a routerLink="invoices/city" class="subnav__link">
+              <span class="nav__link__text">City</span>
+            </a>
+          </li>
+          <li class="subnav__item">
+            <a routerLink="invoices/enterprise" class="subnav__link">
+              <span class="subnav__link__text">Enterprise</span>
+            </a>
+          </li>
+          <li class="subnav__item">
+            <a routerLink="invoices/ondemand" class="subnav__link">
+              <span class="subnav__link__text">On-demand</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="disbursement" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/Disbursement.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Disbursement</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="report" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/Chart.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Timesheet Report</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="users" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/User.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Users</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="settings" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/settings.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Settings</span>
+        </a>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = !isActive"
+      >
+        <a class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/configuration.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Configuration</span>
+          <img
+            src="../../../../assets/sidebar-icons/down-arrow.svg"
+            alt=""
+            class="nav__link__arrow"
+          />
+        </a>
+        <ul class="subnav__list" [ngClass]="{ navactive: isActive }">
+          <li class="subnav__item">
+            <a routerLink="configuration/role" class="subnav__link">
+              <span class="nav__link__text">Role</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li
+        routerLinkActive="nav__item--active"
+        class="nav__item"
+        (click)="isActive = false"
+      >
+        <a routerLink="help" class="nav__link">
+          <img
+            src="../../../../assets/sidebar-icons/help.svg"
+            class="nav__link__icon"
+            alt=""
+          />
+          <span class="nav__link__text">Help</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar__profile">
+    <div class="profile__avatar">
+      <img src="../../../../assets/images/avatar.png" alt="avatar" />
+    </div>
+    <div class="profile__detail">
+      <span>Odell Culhane</span>
+      <span>Admin</span>
+    </div>
+  </div>
+</div>

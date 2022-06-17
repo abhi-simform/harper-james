@@ -1,0 +1,29 @@
+@use "../utilities/" as *;
+
+:root {
+  --fonts: "DM Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../assets/fonts/DMSans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../assets/fonts/DMSans-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../assets/fonts/DMSans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
