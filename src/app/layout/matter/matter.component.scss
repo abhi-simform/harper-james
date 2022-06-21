@@ -1,0 +1,43 @@
+@use "../../../scss/globals/colors.scss" as *;
+
+th,
+td {
+  padding-inline: 7px;
+}
+
+.last-update {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 60px;
+}
+
+.Open {
+  color: $clr-active-text;
+  background-color: $clr-active-bg;
+}
+
+.Suspended {
+  color: $clr-suspended-text;
+  background-color: $clr-suspended-bg;
+}
+
+.Closed {
+  color: $clr-closed-text;
+  background-color: $clr-closed-bg;
+}
+
+.Draft {
+  color: $clr-draft-text;
+  background-color: $clr-draft-bg;
+}
+
+.Pending {
+  color: $clr-pending-text;
+  background-color: $clr-pending-bg;
+}
+
+.Cancelled {
+  color: $clr-cancelled-text;
+  background-color: $clr-cancelled-bg;
+}

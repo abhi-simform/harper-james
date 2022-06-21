@@ -11,13 +11,13 @@
   font-size: 34px;
   line-height: 42px;
   letter-spacing: -0.02em;
-  color: var(--clr-blue);
+  color: $clr-blue;
 }
 
 .module__search {
   display: flex;
   gap: 15px;
-  background-color: var(--clr-white);
+  background-color: $clr-white;
   padding: 10px;
   border-radius: 10px;
   width: 320px;
@@ -30,11 +30,11 @@
 .divider {
   height: 30px;
   width: 1px;
-  background-color: var(--clr-scroll-grey);
+  background-color: $clr-scroll-grey;
 }
 
 .table-container {
-  background-color: var(--clr-white);
+  background-color: $clr-white;
   padding: 25px;
   margin-top: 30px;
   border-radius: 20px;
@@ -53,12 +53,12 @@
   display: flex;
   gap: 10px;
   padding: 10px;
-  background-color: var(--clr-blue-bg);
+  background-color: $clr-blue-bg;
   border-radius: 10px;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: var(--clr-text-1);
+  color: $clr-text-1;
 }
 
 .filter__select {
@@ -82,7 +82,7 @@ tr {
 
 tr:nth-child(even) {
   cursor: pointer;
-  background-color: var(--clr-blue-bg);
+  background-color: $clr-blue-bg;
 }
 
 td {
@@ -91,13 +91,13 @@ td {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: var(--clr-text-1);
+  color: $clr-text-1;
 }
 
 th {
   white-space: nowrap;
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
+  background-color: $clr-blue;
+  color: $clr-white;
   padding: 15px;
   font-size: 12px;
   line-height: 16px;
@@ -115,4 +115,19 @@ th {
   line-height: 20px;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.btn-primary {
+  color: $clr-white;
+  background: $clr-blue;
 }

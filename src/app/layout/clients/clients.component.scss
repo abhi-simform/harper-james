@@ -1,0 +1,16 @@
+@use "../../../scss/globals/colors.scss" as *;
+
+.Active {
+  color: $clr-active-text;
+  background-color: $clr-active-bg;
+}
+
+.Inactive {
+  color: $clr-inactive-text;
+  background-color: $clr-inactive-bg;
+}
+
+.Suspended {
+  color: $clr-suspended-text;
+  background-color: $clr-suspended-bg;
+}

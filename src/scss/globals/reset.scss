@@ -1,14 +1,17 @@
 @use "../utilities/" as *;
+@use "./colors.scss" as *;
+@use "./fonts.scss" as *;
 
 *,
 *::before,
 *::after {
   margin: 0;
-  padding: 0;
+  // padding: 0;
   box-sizing: border-box;
 }
 
 ul {
+  padding-left: 0;
   list-style: none;
 }
 
@@ -19,16 +22,10 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  // line-height: 1.5;
   overflow-x: hidden;
-  background-color: var(--clr-blue-bg);
+  background-color: $clr-blue-bg;
+  font-family: $fonts;
 }
-
-// h1,
-// h2,
-// h3 {
-//   line-height: 1.2;
-// }
 
 a {
   text-decoration: none;

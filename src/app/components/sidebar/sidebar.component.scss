@@ -1,3 +1,5 @@
+@use "../../../scss/globals/" as *;
+
 .sidebar {
   position: sticky;
   top: 0;
@@ -5,7 +7,7 @@
   width: 290px;
   padding: 45px 0px 30px 0px;
   border-radius: 0px 30px 30px 0px;
-  background-color: var(--clr-white);
+  background-color: $clr-white;
   position: relative;
 }
 
@@ -24,18 +26,18 @@
 }
 
 .nav__item--active {
-  background-color: var(--clr-blue);
-  color: var(--clr-white);
+  background-color: $clr-blue;
+  color: $clr-white;
   position: relative;
   .nav__link {
-    color: var(--clr-white);
+    color: $clr-white;
 
     .nav__link__icon {
       filter: invert(100%);
     }
   }
   .nav__link__arrow {
-    color: var(--clr-white);
+    color: $clr-white;
     filter: invert(100%);
   }
   &::after {
@@ -45,7 +47,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-color: var(--clr-green);
+    background-color: $clr-green;
   }
   .subnav__list {
     max-height: 1000px;
@@ -59,10 +61,10 @@
   gap: 15px;
   padding: 17px 30px;
   font-weight: 700;
-  border-bottom: 1px solid var(--clr-lighter-grey);
-  color: var(--clr-text-3);
+  border-bottom: 1px solid $clr-lighter-grey;
+  color: $clr-text-3;
   .nav__link__icon {
-    color: var(--clr-text-3);
+    color: $clr-text-3;
   }
 }
 
@@ -72,7 +74,7 @@
 }
 
 .subnav__list {
-  background-color: var(--clr-blue-bg);
+  background-color: $clr-blue-bg;
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -83,7 +85,7 @@
   align-items: center;
   gap: 15px;
   padding: 17px 30px;
-  color: var(--clr-text-1);
+  color: $clr-text-1;
   padding-left: 66px;
   font-weight: 500;
 }
@@ -93,6 +95,7 @@
 }
 
 .sidebar__profile {
+  cursor: pointer;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -102,7 +105,7 @@
   padding: 15px;
   border-radius: 10px;
   width: calc(100% - 60px);
-  background-color: var(--clr-blue-bg);
+  background-color: $clr-blue-bg;
 }
 
 .profile__avatar {
@@ -125,7 +128,7 @@
       font-weight: 500;
       font-size: 12px;
       line-height: 16px;
-      color: var(--clr-text-3);
+      color: $clr-text-3;
       letter-spacing: -0.02em;
     }
   }

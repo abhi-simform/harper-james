@@ -1,0 +1,72 @@
+@use "../../../scss/globals/" as *;
+.login {
+  h2 {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -0.02em;
+    color: $clr-blue;
+    margin-bottom: 25px;
+    &:nth-child(2) {
+      color: $clr-logo-blue;
+    }
+  }
+}
+
+.login-form {
+  max-width: 400px;
+  display: grid;
+  gap: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid $clr-blue;
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $clr-blue-bg-2;
+  }
+  input {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $clr-blue;
+    padding: 15px 0;
+    &::placeholder {
+      color: $clr-blue;
+    }
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
+.login__option {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  input {
+    margin-right: 8.5px;
+    border-radius: 3px;
+    background-color: transparent;
+  }
+  a {
+    color: $clr-green;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+}

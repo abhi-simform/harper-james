@@ -1,0 +1,46 @@
+@use "../../scss/globals/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Tangerine:wght@700&display=swap");
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: calc(50% - 40px) 1fr;
+}
+
+.auth__left {
+  position: relative;
+  text-align: center;
+  background-color: $clr-white;
+  padding: 30px;
+  border-radius: 0 30px 30px 0;
+}
+
+.auth__logo {
+  position: absolute;
+}
+
+.auth__art {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  h2 {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.auth__right {
+  router-outlet {
+    position: absolute;
+  }
+  display: grid;
+  padding-inline: 55px;
+  align-items: center;
+}
+
+.btn {
+  padding: 15px 30px;
+}
